@@ -6,8 +6,6 @@
 </head>
 <body>
     <h1>Thymeleaf Page</h1>
-    <p><a th:href="@{/{aid}(aid=${id})}">リンク</a></p>
-    <p><a th:href="@{/{aid}(aid=${param.id[0]})}">リンク2</a></p>
-    <p><a th:href="@{/(previous=${param.id[0]})}">リンク3</a></p>
+    <p th:text="${msg}"></p>
 </body>
 </html>
